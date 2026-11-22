@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="landing.css">
   <script src="lang.js" defer></script>
   <script src="landing.js" defer></script>
+  <script src="prices.js" defer></script>
 </head>
 <body class="landing">
   <div class="sky" aria-hidden="true"></div>
@@ -36,10 +37,10 @@
     <!-- Hero -->
     <section class="hero2">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="en">Cat alarm clock for iPhone</span><span class="zh">iPhone 小猫闹钟</span></p>
+        <img class="hero-logo" src="icon.png" alt="Sleepaw">
         <h1>
-          <span class="en">Sleep well.<br>Wake up <em>for real</em>.</span>
-          <span class="zh">好好睡，<br>好好醒，<em>有猫陪着</em>。</span>
+          <span class="en">Sleep well, wake up <em>for real</em>.</span>
+          <span class="zh">好好睡，好好醒，<em>有猫陪着</em>。</span>
         </h1>
         <p class="lede">
           <span class="en">Sleepaw is an alarm clock that looks after your nights and your mornings, with a cat called Whiskers by your side.</span>
@@ -166,6 +167,7 @@
       <div class="f-visual reveal" aria-hidden="true">
         <div class="night">
           <div class="moon"></div>
+          <img src="cat-sleeping.gif" alt="" class="night-cat">
           <div class="live">
             <p class="live-label"><span class="en">Time left to sleep</span><span class="zh">今晚还能睡</span></p>
             <p class="live-num" data-countdown="26520">7h 22m</p>
@@ -231,7 +233,7 @@
       </div>
       <div class="f-visual reveal" aria-hidden="true">
         <div class="cat-stage">
-          <img src="icon.png" alt="" class="cat-float">
+          <img src="cat-love.gif" alt="" class="cat-pixel">
           <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
           <div class="coins">+20</div>
         </div>
@@ -242,12 +244,13 @@
     <section id="pro" class="pro reveal">
       <h2><span class="en">Try everything free for 7 days</span><span class="zh">所有功能，免费试用 7 天</span></h2>
       <p class="muted"><span class="en">Then choose what suits you. No ads, ever.</span><span class="zh">之后按你的习惯选择，永远没有广告。</span></p>
-      <div class="plans">
-        <div class="plan"><b><span class="en">Monthly</span><span class="zh">按月</span></b><span class="en">Pay as you go</span><span class="zh">灵活订阅</span></div>
-        <div class="plan pop"><em><span class="en">Most popular</span><span class="zh">最受欢迎</span></em><b><span class="en">Yearly</span><span class="zh">按年</span></b><span class="en">Best value per month</span><span class="zh">折合每月最划算</span></div>
-        <div class="plan"><b><span class="en">Lifetime</span><span class="zh">终身</span></b><span class="en">Pay once, keep it</span><span class="zh">一次买断</span></div>
+      <div class="plans" data-prices>
+        <div class="plan"><b><span class="en">Monthly</span><span class="zh">按月</span></b><p class="price"><span data-p="monthly">€4.99</span><small><span class="en">/ month</span><span class="zh">/ 月</span></small></p><span class="en">Cancel anytime</span><span class="zh">随时取消</span></div>
+        <div class="plan pop"><em><span class="en">Most popular</span><span class="zh">最受欢迎</span></em><b><span class="en">Yearly</span><span class="zh">按年</span></b><p class="price"><span data-p="yearly">€34.99</span><small><span class="en">/ year</span><span class="zh">/ 年</span></small></p><span><span class="en">Just </span><span class="zh">折合每月 </span><span data-p="perMonth">€2.92</span><span class="en"> a month</span></span></div>
+        <div class="plan"><b><span class="en">Lifetime</span><span class="zh">终身</span></b><p class="price"><span data-p="lifetime">€69.99</span><small><span class="en">once</span><span class="zh">一次</span></small></p><span class="en">Pay once, keep it forever</span><span class="zh">一次买断，永久使用</span></div>
       </div>
-      <p class="fine"><span class="en">Prices are shown in the app in your local currency. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period, in your Apple ID settings.</span><span class="zh">价格以 App 内显示的当地货币为准。订阅会自动续费，除非在周期结束前至少 24 小时在 Apple ID 设置中取消。</span></p>
+      <p class="region-note"><span class="en">Prices for </span><span class="zh">当前显示：</span><b data-p="region">Europe</b><span class="en">. </span><span class="zh">。</span><span class="region-pick" role="group" aria-label="Region"><button data-r="eu">€</button><button data-r="us">$</button><button data-r="cn">¥</button></span></p>
+      <p class="fine"><span class="en">Other regions see their local price in the app. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period, in your Apple ID settings.</span><span class="zh">其他地区以 App 内显示的当地价格为准。订阅会自动续费，除非在周期结束前至少 24 小时在 Apple ID 设置中取消。</span></p>
     </section>
 
     <section class="final reveal">

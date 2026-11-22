@@ -8,22 +8,25 @@
   <link rel="icon" href="icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="landing.css">
   <script src="lang.js" defer></script>
 </head>
-<body>
-  <div class="wrap">
-    <header class="top">
+<body class="landing">
+  <div class="sky" aria-hidden="true"></div>
+  <header class="bar">
+    <div class="bar-in">
       <a class="brand" href="./"><img src="icon.png" alt=""><span class="en">Sleepaw</span><span class="zh">枕边喵</span></a>
+      <nav class="bar-links">
+        <a href="./#features"><span class="en">Features</span><span class="zh">功能</span></a>
+        <a aria-current="page" href="support.html"><span class="en">Support</span><span class="zh">帮助</span></a>
+        <a href="privacy.html"><span class="en">Privacy</span><span class="zh">隐私</span></a>
+      </nav>
       <div class="lang" role="group" aria-label="Language"><button data-set="en" aria-pressed="true">EN</button><button data-set="zh" aria-pressed="false">中文</button></div>
-    </header>
-    <nav class="links">
-      <a href="./"><span class="en">Home</span><span class="zh">首页</span></a>
-      <a href="support.html" aria-current="page"><span class="en">Support</span><span class="zh">帮助与支持</span></a>
-      <a href="privacy.html"><span class="en">Privacy Policy</span><span class="zh">隐私政策</span></a>
-    </nav>
-
+    </div>
+  </header>
+  <div class="page">
     <main>
       <h1><span class="en">How can we help?</span><span class="zh">需要什么帮助？</span></h1>
 
@@ -57,10 +60,12 @@
       </details>
     </main>
 
-    <footer>
-      <p><a href="privacy.html"><span class="en">Privacy Policy</span><span class="zh">隐私政策</span></a></p>
-      <p>© 2026 Xi Chen, Zhenhao Peng, Hongxin Xu</p>
-    </footer>
   </div>
+  <footer class="foot">
+    <div class="foot-in">
+      <p><a href="./"><span class="en">Home</span><span class="zh">首页</span></a> · <a href="support.html"><span class="en">Support</span><span class="zh">帮助与支持</span></a> · <a href="privacy.html"><span class="en">Privacy Policy</span><span class="zh">隐私政策</span></a> · <a href="mailto:xicheninfo@gmail.com">xicheninfo@gmail.com</a></p>
+      <p>© 2026 Xi Chen, Zhenhao Peng, Hongxin Xu</p>
+    </div>
+  </footer>
 </body>
 </html>
